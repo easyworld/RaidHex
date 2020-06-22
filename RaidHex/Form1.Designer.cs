@@ -39,6 +39,8 @@
             this.WriteDataButton = new System.Windows.Forms.Button();
             this.ReadDataButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.typeComboBox = new System.Windows.Forms.ComboBox();
+            this.starDisplayComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.seedTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.starDisplayComboBox = new System.Windows.Forms.ComboBox();
-            this.typeComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -166,6 +166,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Editor";
             // 
+            // typeComboBox
+            // 
+            this.typeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.typeComboBox.FormattingEnabled = true;
+            this.typeComboBox.Location = new System.Drawing.Point(62, 100);
+            this.typeComboBox.Name = "typeComboBox";
+            this.typeComboBox.Size = new System.Drawing.Size(112, 20);
+            this.typeComboBox.TabIndex = 22;
+            // 
+            // starDisplayComboBox
+            // 
+            this.starDisplayComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.starDisplayComboBox.FormattingEnabled = true;
+            this.starDisplayComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.starDisplayComboBox.Location = new System.Drawing.Point(62, 46);
+            this.starDisplayComboBox.Name = "starDisplayComboBox";
+            this.starDisplayComboBox.Size = new System.Drawing.Size(112, 20);
+            this.starDisplayComboBox.TabIndex = 21;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -231,28 +255,6 @@
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 0;
             this.label4.Text = "Seed";
-            // 
-            // starDisplayComboBox
-            // 
-            this.starDisplayComboBox.FormattingEnabled = true;
-            this.starDisplayComboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.starDisplayComboBox.Location = new System.Drawing.Point(62, 46);
-            this.starDisplayComboBox.Name = "starDisplayComboBox";
-            this.starDisplayComboBox.Size = new System.Drawing.Size(112, 20);
-            this.starDisplayComboBox.TabIndex = 21;
-            // 
-            // typeComboBox
-            // 
-            this.typeComboBox.FormattingEnabled = true;
-            this.typeComboBox.Location = new System.Drawing.Point(62, 100);
-            this.typeComboBox.Name = "typeComboBox";
-            this.typeComboBox.Size = new System.Drawing.Size(112, 20);
-            this.typeComboBox.TabIndex = 22;
             // 
             // Form1
             // 

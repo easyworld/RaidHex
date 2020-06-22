@@ -39,6 +39,8 @@ namespace RaidHex
             denIdComboBox.ValueMember = "Value";
             denIdComboBox.DisplayMember = "Text";
             denIdComboBox.DataSource = GameDataSource.GetDenDataSource();
+            denIdComboBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            denIdComboBox.AutoCompleteSource = AutoCompleteSource.ListItems;
             denIdComboBox.SelectedIndexChanged += new EventHandler(denIdComboBox_SelectedIndexChanged);
 
             typeComboBox.ValueMember = "Value";
@@ -63,7 +65,7 @@ namespace RaidHex
             {
                 socketClient.Connect(point);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 MessageBox.Show($"open {ip}:{portStr} fail");
                 return;
@@ -167,12 +169,18 @@ namespace RaidHex
                 return;
             }
             string content = BitConverter.ToString(den.getBytes()).Replace("-", "");
+            //MessageBox.Show($"poke {address} 0x{content}");
             SendMsg($"poke {address} 0x{content}");
             MessageBox.Show("Success");
         }
 
         private void WriteDataButton_Click(object sender, EventArgs e)
         {
+            den.Seed = seedTextBox.Text;
+            den.Stars = (byte)starDisplayComboBox.SelectedIndex;
+            den.RandRoll = Convert.ToByte(randRollTextBox.Text);
+            den.DenType = (byte)typeComboBox.SelectedIndex;
+            den.Flags = Convert.ToByte(flagsTextBox.Text);
             setData();
         }
     }
