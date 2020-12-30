@@ -20,7 +20,7 @@ namespace RaidHex
         int denId = 0;
         Den den;
 
-        private static int denOffset = 0x450C0A80;
+        private static int denOffset = 0x450c8a70;//0x450C0A80;
         public Form1()
         {
             InitializeComponent();
@@ -87,9 +87,10 @@ namespace RaidHex
                 MessageBox.Show($"Raid Num:{denIdComboBox.SelectedValue} is invalid");
                 return 0;
             }
-            if (denId >= 0 && denId < 190)
+            if (denId >= 0 && denId < 276)
             {
-                if (denId >= 100) denId += 11;
+                if (denId >= 190) denId += 32;
+                else if (denId >= 100) denId += 11;
                 return denId;
             }
             else

@@ -269,7 +269,7 @@
             this.Controls.Add(this.ipTextBox);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "RaidHexFor1.2";
+            this.Text = "RaidHexFor1.3.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
