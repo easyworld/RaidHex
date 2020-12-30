@@ -1,7 +1,7 @@
 # RaidHex
 Modify raid data in pokemon sword and shield by sys-botbase
 
-Support pokemon sword and shield 1.2 version only
+Support pokemon sword and shield 1.3.1 version only
 
 ## Screenshots
 ![main](https://raw.githubusercontent.com/easyworld/RaidHex/master/screenshot.png)
